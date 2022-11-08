@@ -1,76 +1,242 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-.headlogo{
-    Font-family: Montserrat;
-    Font-size: 64px;
-    Vertical-align: Top;
-    font-weight: 900;
-    color:darkgreen;
-    position: relative;
-    padding: 10px;
-    text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Color+Emoji&display=swap');
 *{
-    margin: 0%;
+    margin: 0px;
 }
-.main{
-    display: flex;
-    height: 100%;
-    width: 100%;
+:root{
+    --font:'Montserrat', sans-serif;
+    --emoji:'Noto Color Emoji', sans-serif;
+    --white:white
+}   
+body{
+    background-color: #1B1212;
+}
+h1{
+    font-family:'Montserrat', sans-serif;
+    padding: 30px 0px 20px 20px;
+    text-align: center;
 }
 header{
-    background-color: rgb(0, 0, 0);
+    background-color:#231709 ;
+    color:white;
+    height:180px;
+    
+    width:100%
 }
-nav>*{
-    color: aliceblue;
+.a{
+    font-family:'Montserrat', sans-serif;
+    font-weight: bold;
     text-decoration: none;
-    Font-family: Montserrat;
-    font-weight: 700;
-    font-size: 28px;
-    text-align: center;
-    padding:10px;
+    color: black;
+    background-color: white;
+    padding:15px;
+    border-radius: 20px;
+    margin: 5px;
 }
 nav{
-    text-align: center;
-    bottom: 50%;
-    position: relative;
-    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    
 }
-footer>*{
-    text-align: center;
-    font-family: Montserrat;
-    color:aliceblue;
-    padding: 5px;
-}
-footer{
-    background-color: rgb(15, 15, 15)
-}
-main{
-    background-color: black;
-}
-main>*{
-    color: white;
-    font-family: Montserrat;
-}
-#music{
-    font-size: 64px;
-    padding: 50px;
-}
-article{
-    border:solid 5px #1C8546;
-    display:inline-block;
-    border-radius: 10px;
-    width: 273px;
-    height: 353px;
-    background-color: #1C8546;
-    margin:35px;
+img{
+    width: 100px;
+    height:100px;
+    border-radius: 30px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 div{
-
+    padding: 5px;
+}
+main{
+    background-image: url('bkg.jpg');
+    background-repeat: no-repeat;
+    background-size:100%;
+    transform: rotate(0deg);
+    z-index: -1;
+}
+.bigfont{
+    font-weight: bolder;
+    font-size: 100px;
+}
+.bwh{
+    font-weight: 800;
+    display:inline ;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 40px;
+}
+#boywithalo{
+    display: flex;
     justify-content: center;
 }
-.acc{text-align: center;
-font-size:64px;
-padding: 30px;
-color: #1C8546;
+#down{
+    font-family: var(--font);
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+.emoji{
+    font-family: var(--emoji);
+}
+.white{
+    color: var(--white);
+}
+.article{
+    color: black;
+    display: flex;
+    justify-content:center ;
+}
+article{
+    background-color: aliceblue;
+    display: inline-block;
+    padding: 10px;
+    padding-bottom: 90px;
+    margin-left: 10px;
+    border-radius: 30px; ;
+    margin: 20px;
+}
+article:hover{
+    background-color:lavender;
+    transition: 0.3s;
+}
+p{
+    font-family: var(--font);
+    
+}
+a{
+    font-family: var(--font);
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color:black;
+    transition: 0.5s;
+}
+.desc{
+    text-align: center;
+}
+.mysites{
+    display: flex;
+    justify-content: center;
+}
+.goto{
+    color: black;
+    margin: 10px;
+    background-color: #1B1212;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+}
+.goto:hover{
+    background-image: linear-gradient(to right, #ff7300, #7509e0, #09e07f);
+    color: black;
+    transition: 0.3s;
+    font-weight:bold;
+}
+article{
+    display: grid;
+    vertical-align: middle;
+}
+article>*{
+    display: grid;
+    vertical-align: middle;
+}
+.nosign{
+    display: none;
+}
+.testtext{
+    display: none;
+}
+@media (max-width: 480px) {
+    header{
+        height:auto;
+    }
+    #boywithalo>*{
+        font-size: 30px;
+        padding-right: 15px;
+
+    }
+    main{
+        background-size:auto;
+    }
+    #down{
+        color: white;
+    }
+    .bwh{
+        color:black
+    }
+    .helloits{
+        color: white;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    header{
+        height:auto;
+    }
+    #boywithalo>*{
+        font-size: 80px;
+        padding-right: 15px;
+
+    }
+    main{
+        background-size:auto;
+    }
+    #down{
+        color: white;
+    }
+    .bwh{
+        color:black
+    }
+    .helloits{
+        color: black;
+    }
+}
+
+@media (max-width: 320px) and (max-height: 658px)  {
+
+    .nosign{
+        display: block;
+    }
+    header,main,footer{
+        display: none;
+    }
+    body{
+        background-image:url(bkg.jpg) ;
+        
+    }
+    #error{
+        font-weight: 500;
+        color: black;
+    }
+    /*s9+ and fold*/
+}
+@media(max-width: 540px) and (max-height: 720px)  {
+
+    .nosign{
+        display: block;
+    }
+    header,main,footer{
+        display: none;
+    }
+    body{
+        background-image:url(bkg.jpg) ;
+        
+    }
+    #error{
+        font-weight: 500;
+        color: black;
+    }
+    /*surface duo*/
+}
+@media(max-width: 1024px) and (max-height: 1366px) and (min-width: 1024px) and (min-height: 1366px)  {
+
+    .testtext{
+        color: white;
+        background-color: red;
+        display: block;
+    }
+    /*ipadpro*/
 }
